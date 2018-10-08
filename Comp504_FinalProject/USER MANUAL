@@ -1,0 +1,31 @@
+USER MANUAL
+
+Server Side
+__________________________________________________________________________________________________________________________________
+To start the game, we need to start the server function on the host machine first. The server can be started by running the 
+serverController.java file under the path ys54_yj25.server.serverController. The connected clients can be seen in the panel on the 
+left side of the App window, and the clients will be automatically invited to the game lobby room. The game requires even number of 
+participants. Once the number of connected clients is an even number, the host can hit the "start game" button in the top panel to 
+start the game. Upon starting the game, the game data will be pushed to all the connected clients and the team assignment will be 
+done automatically. 
+
+
+
+
+Client Side
+__________________________________________________________________________________________________________________________________
+The client side App can be started by running the Controller.java file under the path ys54_yj25.client.mainApp.mainController. The 
+client App can connect to the any server with a given IP address. The user need to enter the user name and login first, then enter 
+remote IP address and connect to the server. If the server cannot invite the client into the lobby room, our client app can request 
+the room list from the server and join the lobby room. 
+
+
+The Game
+__________________________________________________________________________________________________________________________________
+This game needs the cooperation between the two members in the team. One of the team member will be assigned as the problem solver, 
+and the other one will be assigned as the map finder. The problem solver will be solving a random math calculation problem. Once the 
+problem is correctly solved, a geographic coordinate will be given to indicate the location on the map to visit. The problem solver 
+will then inform the map finder with the information through the in-team chatting. The map finder will need to find the designated 
+location on the map and click on the map. If the location is hit, this checkpoint is checked and a new quiz will be popped up in the 
+problem solver's view again. There are total 10 checkpoints to be checked. Any team that finishes checking the last checkpoint first 
+will win the game. The game will end automatically when a team wins.
